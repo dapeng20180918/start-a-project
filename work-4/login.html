@@ -10,8 +10,8 @@
 			font-size: 1.5em;
 			margin: 0;
 			/*text-align: center;*/
-			font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
-			font-weight: bold;
+			font-family: “lucida grande”, “lucida sans unicode”, lucida, helvetica, “Hiragino Sans GB”, “Microsoft YaHei”, “WenQuanYi Micro Hei”, sans-serif;
+			/*font-weight: bold;*/
 			background-color: #eff0f4;
 			color: white;
 		}
@@ -56,21 +56,25 @@
 
 		input.phone{
 			width: 100%;
-			background:url(iphone.png) no-repeat 15px 15px, url(line.png) no-repeat 60px 9px;
-			height: 1.5em;
+			background:url(iphone.png) no-repeat 19px 19px, url(line.png) no-repeat 60px 15px;
+			background-size: 20px, 2px 40px;
+			height: 46px;
 			width: all;
-			padding: 10px 10px 10px 80px;
+			padding: 10px 10px 10px 90px;
 			background-color: white;
-			font-size: 130%;
+			font-size: 80%;
+			border: hidden;
 		}
 		input.passwd{
 			width: 100%;
-			background:url(locked.png) no-repeat 15px 15px, url(line.png) no-repeat 60px 9px;
-			height: 1.5em;
+			background:url(locked.png) no-repeat 19px 19px, url(line.png) no-repeat 60px 15px;
+			background-size: 20px, 2px 40px;
+			height: 46px;
 			width: all;
-			padding: 10px 10px 10px 80px;
+			padding: 10px 10px 10px 90px;
 			background-color: white;
-			font-size: 130%;
+			font-size: 80%;
+			border: hidden;
 		}
 		button{
 			width: 100%;
@@ -79,6 +83,14 @@
 			padding: 0;
 			font-size: 1em;
 			color: white;
+			border: hidden;
+		}
+		input:focus { 
+			outline: none;
+			/*background-color: transparent;*/
+		}
+		a{
+			color: #1bcbd9;
 		}
 
 	</style>
@@ -90,14 +102,14 @@
 		<div class="right">关闭</div>
 	</div>
 	<div class="top1">
-		<input class="phone" placeholder="请输入手机号">
+		<input class="phone" placeholder="请输入手机号" maxlength="8">
 	</div>
 	<div class="top1">
-		<input class="passwd" type="password" placeholder="请输入密码">
+		<input class="passwd" type="password" placeholder="请输入密码" maxlength="8">
 	</div>
 	<div class="signin">
 		<button>登&nbsp;&nbsp;&nbsp;录</button>
 	</div>
-	<div class="forget"><u>忘记密码</u></div>
+	<div class="forget"><a href="#">忘记密码</a></div>
 </body>
 </html>
