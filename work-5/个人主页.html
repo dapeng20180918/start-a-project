@@ -4,130 +4,21 @@
 	<title>主页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta charset="utf-8">
-	<style type="text/css">
-	body{
-		margin: 0;
-		font-size: 1.5em;
-		font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
-		font-weight: bold;
-		color: white;
-	}
-	.header{
-		height: 2em;
-		width: 100%;
-		background: url(return.png) no-repeat 0.5em 1em;
-		background-size: 0.8em 0.7em;
-		background-color: #1bcbd9;
-		text-align: center;
-		padding-top: 0.8em;
-		z-index:2;
-	}
-	.footer{
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 3em;
-		/*background-color: red;*/
-	}
-	.user{
-		width: 100%;
-		height: 9em;
-		background: url(background.png) no-repeat 0 0;
-		background-size: 100%;
-		z-index:10;
-		font-size: 80%;
-	}
-	div.user .user-pic{
-		background: url(user.png) no-repeat 20px 65px;
-		background-size: 60px;
-		height: 100%;
-		width: 100px;
-		float: left;
-	}
-	div.user .user-line1{
-		padding-left: 90px;
-		padding-top: 70px;
-	}
-	div.user .user-line2{
-		background: url(position.png) no-repeat 100px 5px;
-		background-size: 13px;
-		padding-left: 120px;
-		padding-top: 0;
-	}
-	.skill{
-		color: black;
-		font-size: 0.8em;
-	}
-	.mytab{
-		border-bottom: 1px solid gray;
-		margin-left: 10px;
-		padding: 20px 15px;
-	}
-	div.first{
-		margin: 0;
-		background: url(skill.png) no-repeat 5px 20px;
-		background-size: 5px 23px;
-		padding: 20px 15px;
-		border-bottom: 1px solid gray;
-	}
-	div.home{
-		background: url(line.png) no-repeat 85px 18px;
-	}
-	div.other{
-		background: url(line.png) no-repeat 102px 18px;
-		color: gray;
-	}
-	div.info{
-		padding: 20px 15px;
-		border-bottom: 1px solid gray;
-		
-		color: gray;
-	}
-	div.mybody{
-		max-height: 580px;
-		overflow-y: auto;
-	}
-	img.star{
-		height: 0.8em;
-	}
-	span.padding-1{
-		padding-left: 15px;
-		color: black;
-	}
-	span.red{
-		color: red;
-	}
-	div.left{
-		float: left;
-		background: url(line.png) no-repeat 87px 0 ;
-		padding-top: auto;
-		height: 100%;
-	}
-	div.right{
-		float: center;
-		/*clear: both;*/
-		padding-left: 95px;
-		color: black;
-	}
-	button.btn{
-		position: absolute;
-		width: 45%;
-		height: 90%;
-		left: 3%;
-		font-size: 1em;
-		bottom: 0.2em;
-		color: #1bcbd9;
-		background-color: white;
-		border-radius: 10px;
-		border: 2px solid #1bcbd9;
-	}
-	button.btn2{
-		left: auto;
-		right: 3%;
-		background-color: #1bcbd9;
-		color: white;
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			resizeDiv();
+		});
+		$(window).resize(function() {
+            resizeDiv();   
+    	});
+		function resizeDiv(){
+			var my_top = ($(".right").height() - 23)/2 + 'px';
+			console.info(my_top);
+        	$(".left").css({"margin-top": my_top});   
+    	}
+	</script>
 </head>
 <body>
 	<div class="header">个人主页</div>
@@ -143,16 +34,16 @@
 			<div class="mytab home"><img class="star" src="star.png"/> 住家  
 				<img class="star" src="star.png" style="padding-left: 15px" /> 不含餐</div>
 			<div class="mytab other">从业年限
-				<span class="padding-1">0~3年</span>
+				<span class="padding-line">0~3年</span>
 			</div>
 			<div class="mytab other">工作时间
-				<span class="padding-1">全天</span>
+				<span class="padding-line">全天</span>
 			</div>
 			<div class="mytab other">服务价格
-				<span class="padding-1 red">25元/小时</span>
+				<span class="padding-line red">25元/小时</span>
 			</div>
 			<div class="mytab info">
-				<div class="left">自我介绍<span class="padding-1" style="float: left;"></span></div>
+				<div class="left">自我介绍<span class="padding-line" ></span></div>
 				<div class="right"> 可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</div>
 			</div>
 		</div>

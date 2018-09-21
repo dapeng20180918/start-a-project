@@ -1,0 +1,124 @@
+body{
+	margin: 0;
+	font-size: 1.5em;
+	font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+	font-weight: bold;
+	color: white;
+}
+.header{
+	height: 2em;
+	width: 100%;
+	background: url(return.png) no-repeat 0.5em 1em;
+	background-size: 0.8em 0.7em;
+	background-color: #1bcbd9;
+	text-align: center;
+	padding-top: 0.8em;
+	z-index:2;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3em;
+	/*background-color: red;*/
+}
+.user{
+	width: 100%;
+	height: 9em;
+	background: url(background.png) no-repeat 0 0;
+	background-size: 100%;
+	z-index:10;
+	font-size: 80%;
+}
+div.user .user-pic{
+	background: url(user.png) no-repeat 20px 65px;
+	background-size: 60px;
+	height: 100%;
+	width: 100px;
+	float: left;
+}
+div.user .user-line1{
+	padding-left: 90px;
+	padding-top: 70px;
+}
+div.user .user-line2{
+	background: url(position.png) no-repeat 100px 5px;
+	background-size: 13px;
+	padding-left: 120px;
+	padding-top: 0;
+}
+.skill{
+	color: black;
+	font-size: 0.8em;
+}
+.mytab{
+	border-bottom: 1px solid gray;
+	margin-left: 10px;
+	padding: 20px 15px;
+}
+div.first{
+	margin: 0;
+	background: url(skill.png) no-repeat 5px 20px;
+	background-size: 5px 23px;
+	padding: 20px 15px;
+	border-bottom: 1px solid gray;
+}
+div.home{
+	background: url(line.png) no-repeat 85px 18px;
+}
+div.other{
+	background: url(line.png) no-repeat 102px 18px;
+	color: gray;
+}
+div.info{
+	padding: 20px 15px;
+	border-bottom: 1px solid gray;
+	color: gray;
+}
+div.mybody{
+	max-height: calc(100% - 150px);
+	width: 100%;
+	position: fixed;
+	overflow-y: auto;
+}
+img.star{
+	height: 0.8em;
+}
+span.padding-line{
+	padding-left: 15px;
+	color: black;
+}
+span.red{
+	color: red;
+}
+div.left{
+	float: left;
+	/*position: relative;*/
+	/*top: 10%;*/
+	/*display: inline;*/
+	background: url(line.png) no-repeat 87px 0 ;
+	height: 1em;
+}
+div.right{
+	/*display: inline;*/
+	margin-left: 97px;
+	color: black;
+}
+button.btn{
+	position: relative;
+	width: 45%;
+	height: 90%;
+	left: 2%;
+	font-size: 1em;
+	bottom: 0.1em;
+	color: #1bcbd9;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #1bcbd9;
+}
+button.btn2{
+	left: auto;
+	right: -5%;
+	background-color: #1bcbd9;
+	color: white;
+}
