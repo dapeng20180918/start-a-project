@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="img" IsPhone="false" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="triangle.png" LocationX="153" LocationY="38" />
+    <Sprite Path="right.png" LocationX="153" LocationY="0" />
+    <Sprite Path="position.png" LocationX="180" LocationY="28" />
+    <Sprite Path="calendar2.png" LocationX="175" LocationY="0" />
+    <Sprite Path="user.png" LocationX="100" LocationY="0" />
+    <Sprite Path="select.png" LocationX="100" LocationY="50" />
+    <Sprite Path="home.png" LocationX="153" LocationY="54" />
+    <Sprite Path="circle-edit.png" LocationX="0" LocationY="0" />
+  </SpriteList>
+</SpriteFile>

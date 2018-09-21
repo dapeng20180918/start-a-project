@@ -1,0 +1,201 @@
+.icon{background-image: url(img.png);}
+.icon-triangle{height:8px;width:13px;background-position:-153px -38px;}
+.icon-right{height:33px;width:19px;background-position:-153px 0;}
+.icon-position{height:23px;width:19px;background-position:-180px -28px;}
+.icon-calendar2{height:24px;width:24px;background-position:-175px 0;}
+.icon-user{height:41px;width:42px;background-position:-100px 0;}
+.icon-select{height:44px;width:42px;background-position:-100px -50px;}
+.icon-home{height:40px;width:46px;background-position:-153px -54px;}
+.icon-circle-edit{height:94px;width:94px;background-position:0 0;}
+
+body{
+	background-color: white;
+	margin: 0;
+	font-size: 2em;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.header{
+	height: 110px;
+	background-color: #5fc0cd;
+}
+.header .btn-group{
+	padding-left: calc(50% - 175px);
+	padding-top: 15px;
+}
+
+.header .btn-group button {
+	background-color: #55a8b3;
+	border: 0;
+	font-size: 1.5em;
+	padding: 10px 15px;
+	color: white;
+	cursor: pointer;
+	float: left;
+	border-radius: 5px;
+}
+/* Add a background color on hover */
+.header .btn-group button:hover {
+	background-color: white;
+	color: #5fc0cd;
+}
+.header .right{
+	float: right;
+	padding-top: 20px;
+	padding-right: 20px; 
+}
+
+button{
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	right: 20px;
+}
+.footer{
+	height: 100px;
+	width: 100%;
+	background-color: #f8fafb;
+	position: absolute;
+	bottom: 0;
+	font-size: 18px;
+}
+.footer button{
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.footer div.left{
+	position: absolute;
+	top: 20px;
+	left: 15%;
+}
+.footer div.left span{
+	display: block;
+	color: #5fc0cd;
+	text-align: center;
+}
+
+.footer div.middle{
+	position: absolute;
+	top: 3px;
+	left: calc(50% - 47px);
+}
+.footer div.right{
+	position: absolute;
+	top: 20px;
+	left: calc(85% - 42px);
+}
+.footer div.right span{
+	display: block;
+	color: #999999;
+	text-align: center;
+}
+.content{
+	
+	/*font-size: 100px;*/
+}
+
+/*模拟下拉框*/
+ul{
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+}
+.nav>li{
+	float: left;
+	width: 33.33%;
+}
+.title ul a{
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: gray;
+	background-color: white;
+}
+.drop-down{
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+}
+.drop-down-content{
+	padding: 0;
+	position:absolute;
+	border: 1px solid gray;
+}
+
+.drop-down-content li:hover a{
+	color: lightgreen;
+}
+.nav .drop-down:hover{
+	overflow: visible;
+}
+ul.nav>li>a{
+	border: 1px solid gray;
+}
+.nav>li:first-child>a{
+}
+.nav>li:last-child>a{
+}
+
+
+.content .list{
+	/*background-color: yellow;*/
+	margin-top: 51px;
+	border: 1px solid gray;
+	height: calc(100% - 263px);
+	position: fixed;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 1;
+}
+.content .title{
+	position: relative;
+	z-index: 100;
+}
+.list .content-one{
+	border: 1px solid gray;
+	color: gray;
+	line-height: 1.5em;
+	font-size: 0.7em;
+	padding: 10px;
+}
+.list .content-one span.float1{
+	float: left;
+	margin-top: 6px;
+}
+.list .content-one .content-line1{
+	padding-left: 15px;
+}
+.list .content-one span.right{
+	float: right;
+	color: red;
+	padding-right: 30px;
+}
+.list .content-one button.right-pic{
+	float: right;
+	margin-right: 35px; 
+	margin-top: 2px; 
+}
+.list .content-one .content-line2{
+	padding-left: 40px;
+	color: black;
+}
+.list .content-one span.float3{
+	float: left;
+	margin-top: 6px;
+	margin-left: 3px;
+}
+.list .content-one .content-line3{
+	padding-left: 15px;
+}
+.nav .drop-down .fix{
+	float: right;
+	margin-top: 22px;
+	margin-right: 15px;
+}
