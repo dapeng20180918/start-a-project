@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	font-size: 1.5em;
 	font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	color: white;
 }
 .header{
@@ -31,21 +31,23 @@ body{
 	font-size: 80%;
 }
 div.user .user-pic{
-	background: url(user.png) no-repeat 20px 65px;
-	background-size: 60px;
+	background: url(user.png) no-repeat 20px 40px;
+	background-size: 85px;
 	height: 100%;
-	width: 100px;
+	width: 110px;
 	float: left;
 }
 div.user .user-line1{
-	padding-left: 90px;
-	padding-top: 70px;
+	padding-left: 120px;
+	padding-top: 55px;
+	font-size: 110%;
 }
 div.user .user-line2{
-	background: url(position.png) no-repeat 100px 5px;
+	background: url(position.png) no-repeat 123px 10px;
 	background-size: 13px;
-	padding-left: 120px;
-	padding-top: 0;
+	padding-left: 140px;
+	padding-top: 10px;
+	font-size: 60%;
 }
 .skill{
 	color: black;
@@ -58,16 +60,16 @@ div.user .user-line2{
 }
 div.first{
 	margin: 0;
-	background: url(skill.png) no-repeat 5px 20px;
+	background: url(skill.png) no-repeat 15px 20px;
 	background-size: 5px 23px;
-	padding: 20px 15px;
+	padding: 20px 25px;
 	border-bottom: 1px solid gray;
 }
 div.home{
 	background: url(line.png) no-repeat 85px 18px;
 }
 div.other{
-	background: url(line.png) no-repeat 102px 18px;
+	background: url(line.png) no-repeat 110px 18px;
 	color: gray;
 }
 div.info{
@@ -85,7 +87,7 @@ img.star{
 	height: 0.8em;
 }
 span.padding-line{
-	padding-left: 15px;
+	padding-left: 30px;
 	color: black;
 }
 span.red{
@@ -96,12 +98,12 @@ div.left{
 	/*position: relative;*/
 	/*top: 10%;*/
 	/*display: inline;*/
-	background: url(line.png) no-repeat 87px 0 ;
+	background: url(line.png) no-repeat 94px 0 ;
 	height: 1em;
 }
 div.right{
 	/*display: inline;*/
-	margin-left: 97px;
+	margin-left: 113px;
 	color: black;
 }
 button.btn{
