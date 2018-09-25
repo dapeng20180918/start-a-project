@@ -10,7 +10,7 @@ body{
 	width: 100%;
 	background: url(return.png) no-repeat 0.5em 1em;
 	background-size: 0.8em 0.7em;
-	background-color: #1bcbd9;
+	background-color: #5fc0cd;
 	text-align: center;
 	padding-top: 0.8em;
 	z-index:2;
@@ -76,6 +76,9 @@ div.info{
 	padding: 20px 15px;
 	border-bottom: 1px solid gray;
 	color: gray;
+	position: relative;
+	display: flex;
+	align-items: center;
 }
 div.mybody{
 	max-height: calc(100% - 150px);
@@ -94,17 +97,18 @@ span.red{
 	color: red;
 }
 div.left{
-	float: left;
+	/*float: left;*/
 	/*position: relative;*/
-	/*top: 10%;*/
-	/*display: inline;*/
+	/*display: inline-block;*/
+	width: 108px;
 	background: url(line.png) no-repeat 94px 0 ;
 	height: 1em;
 }
 div.right{
-	/*display: inline;*/
-	margin-left: 113px;
+	/*display: inline-block;*/
+	/*margin-left: 113px;*/
 	color: black;
+	flex:1;
 }
 button.btn{
 	position: relative;
@@ -116,11 +120,11 @@ button.btn{
 	color: #1bcbd9;
 	background-color: white;
 	border-radius: 10px;
-	border: 2px solid #1bcbd9;
+	border: 2px solid #5fc0cd;
 }
 button.btn2{
 	left: auto;
 	right: -5%;
-	background-color: #1bcbd9;
+	background-color: #5fc0cd;
 	color: white;
 }
