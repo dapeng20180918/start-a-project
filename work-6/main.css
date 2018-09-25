@@ -18,6 +18,8 @@ body{
 .header{
 	height: 110px;
 	background-color: #5fc0cd;
+	position: relative;
+	z-index: 999;
 }
 .header .btn-group{
 	padding-left: calc(50% - 175px);
