@@ -52,9 +52,17 @@ body{
 	cursor: pointer;
 	float: left;
 	border-radius: 5px;
+	outline: none;
 }
 /* Add a background color on hover */
 .header .btn-group button:hover {
+	background-color: white;
+	color: #5fc0cd;
+}
+/*.header .btn-group button:active {
+	color: green;
+}*/
+.header .btn-group button:focus {
 	background-color: white;
 	color: #5fc0cd;
 }
@@ -164,7 +172,7 @@ ul.drop-down-content>li{
 }
 
 .drop-down-content li:hover a{
-	color: lightgreen;
+	background-color: lightgreen;
 }
 .nav .drop-down:hover{
 	overflow: visible;
@@ -175,9 +183,9 @@ ul.nav>li>a{
 .nav>li:first-child>a{
 	border-left: none;
 }
-.nav>li:last-child>a{
+.nav>li:last-child .drop-down-content{
+	width: calc(100% - 2px);
 }
-
 
 .content .list{
 	/*background-color: yellow;*/
