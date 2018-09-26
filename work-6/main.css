@@ -1,36 +1,53 @@
 .icon{background-image: url(img.png);}
 .icon-triangle{height:8px;width:13px;background-position:-153px -38px;}
 .icon-right{height:33px;width:19px;background-position:-153px 0;}
-.icon-position{height:23px;width:19px;background-position:-180px -28px;}
-.icon-calendar2{height:24px;width:24px;background-position:-175px 0;}
+.icon-position{height:23px;width:19px;background-position:-180px -28px;
+	transform: scale(0.9);
+}
+.icon-calendar2{height:24px;width:24px;background-position:-175px 0;
+	transform: scale(0.8);
+}
 .icon-user{height:41px;width:42px;background-position:-100px 0;}
-.icon-select{height:44px;width:42px;background-position:-100px -50px;}
+.icon-select{height:44px;width:42px;background-position:-100px -50px;
+	transform: scale(0.8);
+}
 .icon-home{height:40px;width:46px;background-position:-153px -54px;}
 .icon-circle-edit{height:94px;width:94px;background-position:0 0;}
 
 body{
 	background-color: white;
 	margin: 0;
-	font-size: 2em;
+	font-size: 1em;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
 .header{
-	height: 110px;
+	height: 90px;
 	background-color: #5fc0cd;
 	position: relative;
 	z-index: 999;
 }
 .header .btn-group{
-	padding-left: calc(50% - 175px);
-	padding-top: 15px;
+	/*定宽 margin:0 auto实现*/
+	width: 240px; 
+	margin: 0 auto;
+
+	/*table居中*/
+	/*display: table; margin: 0 auto;*/
+
+	/*使用绝对定位实现居中*/
+/*	position:absolute; 
+	left:50%; 
+	transform:translate(-50%);*/
+	padding-top: 16px;
+	font-size: 1.3em;
 }
 
 .header .btn-group button {
 	background-color: #55a8b3;
-	border: 0;
+	border: none;
 	font-size: 1.5em;
-	padding: 10px 15px;
+	padding: 10px; 
 	color: white;
 	cursor: pointer;
 	float: left;
@@ -43,8 +60,8 @@ body{
 }
 .header .right{
 	float: right;
-	padding-top: 20px;
-	padding-right: 20px; 
+	padding-top: 7px;
+	padding-right: 10px; 
 }
 
 button{
@@ -103,20 +120,29 @@ ul{
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-size: 0.8em;
+	font-size: 1.2em;
+	/*box-sizing:border-box;*/
+}
+ul:hover{
+	background-color: lightgreen;
 }
 .nav>li{
+	/*box-sizing:border-box;*/
 	float: left;
 	width: 33.33%;
 }
+ul.drop-down-content>li{
+	
+}
 .title ul a{
+	/*box-sizing:border-box;*/
 	display: block;
 	text-decoration: none;
 	width: 100%;
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
-	color: gray;
+	color: #666;
 	background-color: white;
 }
 .drop-down{
@@ -126,8 +152,15 @@ ul{
 }
 .drop-down-content{
 	padding: 0;
-	position:absolute;
-	border: 1px solid gray;
+	position:relative;
+	top: 1px;
+	border: 1px solid #999;
+	/*border-top: none;*/
+	width: calc(100% - 1px);
+}
+.drop-down-content li a{
+	font-size: 0.8em;
+	width: 100%;
 }
 
 .drop-down-content li:hover a{
@@ -137,9 +170,10 @@ ul{
 	overflow: visible;
 }
 ul.nav>li>a{
-	border: 1px solid gray;
+	border-left: 1px solid #999;
 }
 .nav>li:first-child>a{
+	border-left: none;
 }
 .nav>li:last-child>a{
 }
@@ -148,8 +182,9 @@ ul.nav>li>a{
 .content .list{
 	/*background-color: yellow;*/
 	margin-top: 51px;
-	border: 1px solid gray;
-	height: calc(100% - 263px);
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	height: calc(100% - 243px);
 	position: fixed;
 	width: 100%;
 	overflow-y: auto;
@@ -161,15 +196,15 @@ ul.nav>li>a{
 	z-index: 100;
 }
 .list .content-one{
-	border: 1px solid gray;
+	border: 1px solid #e1e5e7;
 	color: gray;
-	line-height: 1.5em;
-	font-size: 0.7em;
+	line-height: 1.3em;
+	font-size: 1.2em;
 	padding: 10px;
 }
 .list .content-one span.float1{
 	float: left;
-	margin-top: 6px;
+	margin-top: 1px;
 }
 .list .content-one .content-line1{
 	padding-left: 15px;
@@ -177,20 +212,28 @@ ul.nav>li>a{
 .list .content-one span.right{
 	float: right;
 	color: red;
-	padding-right: 30px;
+	padding-right: 15px;
 }
 .list .content-one button.right-pic{
 	float: right;
-	margin-right: 35px; 
-	margin-top: 2px; 
+	margin-right: 20px; 
+	margin-top: -3px; 
 }
 .list .content-one .content-line2{
-	padding-left: 40px;
+	padding-left: 38px;
 	color: black;
+	margin-top: 8px;
+}
+.list .content-one .content-line2 .date{
+	display: inline-block;
+	width: calc(100% - 160px);
+	overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
 }
 .list .content-one span.float3{
 	float: left;
-	margin-top: 6px;
+	margin-top: 1px;
 	margin-left: 3px;
 }
 .list .content-one .content-line3{
@@ -199,5 +242,5 @@ ul.nav>li>a{
 .nav .drop-down .fix{
 	float: right;
 	margin-top: 22px;
-	margin-right: 15px;
+	margin-right: 8px;
 }
