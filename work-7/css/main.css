@@ -1,0 +1,103 @@
+/*home page color*/
+/*header #29bde0*/
+/*body #f0f0f0*/
+/*border #c9c9c9*/
+/*yellow line #FBB435*/
+/*button #69d1e9*/
+/*font #9a9a9a*/
+
+body {
+    background-color: #f0f0f0;
+    font-size: 2em;
+    font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+}
+
+header {
+    height: 50px;
+    background-color: #29bde0;
+}
+
+img.home1 {
+    transform: scale(0.6);
+    padding-top: 18px;
+    padding-left: 8px;
+}
+img.home2{
+    transform: scale(0.65);
+    position: absolute;
+    /*float: right;*/
+    right: 8px;
+    top: 14px;
+}
+img.home3{
+    transform: scale(0.7);
+    position: absolute;
+    /*float: right;*/
+    right: 6px;
+    top: 214px;
+}
+
+div.u-last {
+    text-align: center;
+    position: relative;
+    /*height: 3.6em;*/
+    color: #9A9A9A;
+    margin: 0.65em;
+    background-color: white;
+    padding: 1em 0;
+    border: 1px solid #B6B6B6;
+}
+
+div.u-mid {
+    position: relative;
+    text-align: center;
+    margin: 0.65em;
+    background-color: white;
+    border: 1px solid #c9c9c9;
+    height: 490px;
+}
+
+div.u-mid .u-mid-1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FBB435;
+    padding: 0.7em 0;
+    border-bottom: 1px solid #FBB435;
+}
+
+div.u-mid .u-mid-2 {
+
+}
+
+div.u-mid .u-mid-2 .box {
+    width: calc(100% - 4em);
+    color: white;
+    margin: 0.7em 2em;
+    padding: 1em 0;
+    background-color: #29bde0;
+    border: none;
+}
+
+div.u-mid .u-mid-2 span {
+    color: #9A9A9A;
+    font-size: 0.8em;
+}
+
+div.u-header {
+
+}
+.u-header .ul{
+    text-align: center;
+}
+.u-header li.circle {
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.u-header li.active{
+    background-color: #29bde0;
+}
