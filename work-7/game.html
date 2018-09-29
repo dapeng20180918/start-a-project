@@ -9,13 +9,15 @@
 </head>
 <body>
 <header>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-xs-2">
-                <img src="images/game1.png" alt="" class="game1">
+            <div class="col-xs-2" style="text-align: left">
+                <a href="over.html">
+                    <img src="images/game1.png" alt="" class="game1">
+                </a>
             </div>
             <div class="col-xs-8 u-down-1">投票</div>
-            <div class="col-xs-2">
+            <div class="col-xs-2" style="text-align: right">
                 <a href="over.html">
                     <img src="images/game2.png" alt="" class="game1">
                 </a>
@@ -23,19 +25,19 @@
         </div>
     </div>
 </header>
-<div class="desc">
+<div class="container desc">
     <span>发言讨论结束，请大家投票</span>
     <audio src="pic/从头再来.mp3" loop="loop" preload="auto" id="audio1"></audio>
     <img src="images/game3.png" alt="" class="game3" id="game3">
     <img src="images/cut.png" alt="" class="cut-img">
 </div>
 <div class="u-mid">
-    <div class="container-fluid ">
+    <div class="container">
         <div class="u-textleft">
             <span>点击得票数最多人的头像</span>
         </div>
         <div class="row" id="u-parent">
-            <div class="col-xs-4" id="u-child">
+            <div class="col-xs-4 col-sm-3 col-md-2" id="u-child">
                 <!--onMouseOver="document.all.menulayer_1.style.visibility=''"-->
                 <!--onMouseOut="document.all.menulayer_1.style.visibility='hidden'"-->
                 <div class="u-container">
@@ -53,7 +55,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-sm-3 col-md-2">
                 <div class="u-container">
                     <div class="u-cont-top">
                         水民
@@ -69,7 +71,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-sm-3 col-md-2">
                 <div class="u-container">
                     <div class="u-cont-top">
                         警察
@@ -85,7 +87,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-sm-3 col-md-2">
                 <div class="u-container">
                     <div class="u-cont-top">
                         法官
@@ -101,7 +103,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-sm-3 col-md-2">
                 <div class="u-container">
                     <div class="u-cont-top">
                         狙击手
@@ -117,7 +119,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-sm-3 col-md-2">
                 <div class="u-container">
                     <div class="u-cont-top">
                         医生
@@ -133,7 +135,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-sm-3 col-md-2">
                 <div class="u-container">
                     <div class="u-cont-top">
                         杀手
@@ -149,7 +151,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-sm-3 col-md-2">
                 <div class="u-container">
                     <div class="u-cont-top">
                         水民
@@ -170,7 +172,9 @@
     </div>
 </div>
 <footer>
-    <button class="box">投死</button>
+    <a href="over.html">
+        <button class="box">投死</button>
+    </a>
 </footer>
 
 <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
@@ -191,7 +195,7 @@
         resizeDiv();
     });
 
-    $(".game3").bind("click", function(){
+    $(".game3").bind("click", function () {
         var audio = $("#audio1").get(0);
         console.info(audio);
         audio.currentTime = 0;
