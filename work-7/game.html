@@ -36,11 +36,14 @@
         <div class="u-textleft">
             <span>点击得票数最多人的头像</span>
         </div>
-        <div class="row" id="u-parent">
-            <div class="col-xs-4 col-sm-3 col-md-2" id="u-child">
-                <!--onMouseOver="document.all.menulayer_1.style.visibility=''"-->
-                <!--onMouseOut="document.all.menulayer_1.style.visibility='hidden'"-->
+        <div class="row u-parent" id="u-parent">
+            <div class="u-col-xs-4" id="no-use">
                 <div class="u-container">
+
+                </div>
+            </div>
+            <div class="u-col-xs-4" id="u-child">
+                 <div class="u-container">
                     <div class="u-cont-top">
                         水民
                     </div>
@@ -55,7 +58,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-3 col-md-2">
+            <div class="u-col-xs-4">
                 <div class="u-container">
                     <div class="u-cont-top">
                         水民
@@ -71,7 +74,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-3 col-md-2">
+            <div class="u-col-xs-4">
                 <div class="u-container">
                     <div class="u-cont-top">
                         警察
@@ -87,7 +90,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-3 col-md-2">
+            <div class="u-col-xs-4">
                 <div class="u-container">
                     <div class="u-cont-top">
                         法官
@@ -103,7 +106,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-3 col-md-2">
+            <div class="u-col-xs-4">
                 <div class="u-container">
                     <div class="u-cont-top">
                         狙击手
@@ -119,7 +122,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-3 col-md-2">
+            <div class="u-col-xs-4">
                 <div class="u-container">
                     <div class="u-cont-top">
                         医生
@@ -135,7 +138,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-3 col-md-2">
+            <div class="u-col-xs-4">
                 <div class="u-container">
                     <div class="u-cont-top">
                         杀手
@@ -151,7 +154,7 @@
                     <button class="game7"></button>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-3 col-md-2">
+            <div class="u-col-xs-4">
                 <div class="u-container">
                     <div class="u-cont-top">
                         水民
@@ -177,7 +180,7 @@
     </a>
 </footer>
 
-<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="css/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         // add child node
@@ -186,8 +189,14 @@
             child.find("div.u-cont-bottom").text(i + "号");
             (child).appendTo($("#u-parent"));
         }
+        // add no use node
+        for (var i = 0; i < 6; i++) {
+            var child = $("#no-use").clone(true);
+            child.css("display", "block");
+            (child).appendTo($("#u-parent"));
+        }
         // hidden
-        $(".u-mid .row .col-xs-4 .u-cont-btn").css("visibility", "hidden");
+        $(".u-mid .row .u-col-xs-4 .u-cont-btn").css("visibility", "hidden");
         // resize
         resizeDiv();
     });
@@ -209,11 +218,11 @@
         $(".u-mid").css({"height": my_top});
     }
 
-    $(".u-mid .row .col-xs-4").hover(function () {
-        $(".u-mid .row .col-xs-4:hover .u-cont-btn").css("visibility", "");
+    $(".u-mid .row .u-col-xs-4").hover(function () {
+        $(".u-mid .row .u-col-xs-4:hover .u-cont-btn").css("visibility", "");
         // console.info($(".u-mid .row .col-xs-4:hover .u-cont-btn"));
     }, function () {
-        $(".u-mid .row .col-xs-4 .u-cont-btn").css("visibility", "hidden");
+        $(".u-mid .row .u-col-xs-4 .u-cont-btn").css("visibility", "hidden");
     });
 </script>
 </body>
