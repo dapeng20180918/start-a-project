@@ -1,0 +1,324 @@
+body{
+    background-color: #FAFAFA;
+}
+body.home{
+    text-align: center;
+}
+
+header .home-header1{
+    background-color: white;
+    height: 36px;
+}
+header .home-header1 .left{
+    color: #29B078;
+    margin-top: 8px;
+    text-align: left;
+}
+header .home-header1 .right{
+    text-align: right;
+    margin-top: 5px;
+    color: white;
+}
+header .home-header1 .right img:hover{
+    transform: scale(1.2);
+}
+header .home-header2{
+    background-color: #29B078;
+}
+header .home-header2>.navbar{
+    border: none;
+}
+header .home-header2 li a{
+    padding: 20px 20px;
+    color: white;
+    border-bottom: 3px solid #29B078;
+}
+@media (min-width: 300px) {
+    header .home-header2 .u-nav{
+        padding-left: 30px;
+    }
+    header .home-header2 .u-nav>li{
+        float: left;
+    }
+}
+header .home-header2 li a:hover,
+header .home-header2 li a:focus
+{
+    background-color: #29B078;
+    border-bottom: 3px solid white;
+}
+
+header .home-header2 .logo{
+    transform: scale(0.7);
+    padding-top: 8px;
+}
+.home-body{
+    background-color: #FAFAFA;
+    margin-top: -20px;
+    margin-bottom: 80px;
+}
+.home-body .hb-pic .carousel-inner img{
+    width: 100%;
+    height: auto;
+}
+
+.home-body .info{
+    margin-top: 120px;
+}
+.home-body .info .u-box{
+
+}
+.home-body .info .line2{
+    margin-top: 1.5em;
+    font-weight: bolder;
+}
+.home-body .info .line3{
+    color: #B2B2B2;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+.home-body .info .u-fix-2{
+    margin-top: 14px;
+}
+.home-body .info .u-fix-3{
+    margin-top: 5px;
+}
+.home-body .info .u-box{
+    position: relative;
+    text-align: left;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 183px;
+}
+.home-body .info .u-box .border{
+    position: absolute;
+    height: 183px;
+    width: 3px;
+    left: 0;
+    top: 0;
+}
+.home-body .info .u-box .u-item{
+
+}
+.home-body .info .u-box .line1{
+    color: #28A370;
+    margin-top: 8px;
+    /*margin-left: 30px;*/
+}
+.home-body .info .u-box .line1 img{
+    margin-top: -2px;
+}
+.home-body .info .u-box .line2{
+    color: #9B9B9B;
+    margin-top: 8px;
+    /*margin-left: 30px;*/
+    font-weight: normal;
+}
+.home-body .info .u-box .item2{
+     margin-top: 20px;
+ }
+.home-body .study .title,
+.home-body .student .title,
+.home-body .partner .title
+{
+    padding: 80px 0 50px 0;
+    font-weight: bolder;
+    font-size: 120%;
+}
+.home-body .study .study-row{
+
+}
+.home-body .study .u-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 85px;
+}
+
+@media (min-width: 768px) {
+    .home-body .study .arrow{
+        background: url("../images/1/pic5.png") no-repeat 100% 31px;
+        background-size: 22px auto;
+    }
+}
+.home-body .study .u-line>div{
+    display: inline-block;
+}
+.home-body .study .u-line .circle {
+    color: #28A370;
+    font-size: 1.2em;
+    display: inline-block;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+    background-color: #FFFFFF;
+    border: 1px solid #EDECEC;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding-top: 12px;
+    /*float: left;*/
+}
+.home-body .study .u-line .content{
+    width: calc(100% - 78px);
+    text-align: left;
+    font-size: .8em;
+    padding-left: 10px;
+    font-weight: bolder;
+    color: #999999;
+}
+.home-body .student .u-line{
+    border: 1px solid #EEEDED;
+    background-color: white;
+    margin: 0 10px 10px 10px;
+}
+.home-body .student .u-line .line1 img{
+    margin: 15px;
+}
+.home-body .student .u-line .line2{
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin: 15px;
+}
+.home-body .student .u-line .line3{
+    color: #999999;
+    margin: 15px;
+    text-align: left;
+    font-size: .9em;
+
+}
+.student ul{
+    margin-top: 25px;
+}
+.student ul li.circle {
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #EEEDED;
+    background-color: white;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.student li.circle.active {
+    background-color:  #29B078;
+}
+.student li.circle:hover {
+    background-color:  #29B078;
+}
+.partner .box{
+    border: 1px solid #EEEDED;
+    background-color: white;
+    margin: 0 25px;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    flex-wrap: wrap;
+}
+
+.partner .box .comp{
+    display: inline-block;
+    height: 160px;
+    /*position: relative;*/
+    /*float: left;*/
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+@media (min-width: 300px) {
+    .partner .box .comp{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .partner .box .comp{
+        width: calc(100% / 3);
+    }
+}
+@media (min-width: 992px) {
+    .partner .box .comp{
+        width: 20%;
+    }
+}
+.partner .box .comp:hover{
+    border: 2px solid #F6F6F6;
+}
+
+footer .home-footer1{
+    background-color: white;
+}
+.home-footer1 .title
+{
+    padding: 30px 0 5px 0;
+    font-weight: bolder;
+    font-size: 120%;
+}
+footer .home-footer1 .u-list{
+    text-align: left;
+    padding-left: 30px;
+}
+footer .home-footer1 ul li{
+    /*float: left;*/
+    width: 108px;
+    font-size: 110%;
+    font-weight: bolder;
+    padding: 0.5em 0;
+}
+footer .home-footer1 ul li a{
+    color: #A4A4A4;
+    padding: 0.3em 0;
+    text-decoration: none;
+}
+footer .home-footer1 ul li a:hover{
+    border-bottom: 1px solid #26A26F;
+}
+footer .home-footer2{
+    background-color: #26A26F;
+    margin-top: 8px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 110%;
+    color: white;
+    /*height: 300px;*/
+    line-height: 3em;
+}
+footer .home-footer2 a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+footer .home-footer2 a:hover{
+    border-bottom: 1px solid white;
+}
+footer .home-footer2 .col-u-1,
+footer .home-footer2 .col-u-2,
+footer .home-footer2 .col-u-3
+{
+    padding-top: 25px;
+}
+footer .home-footer2 .col-u-3{
+    padding-right: 100px;
+    padding-bottom: 30px;
+    line-height: 2em;
+    padding-top: 33px;
+}
+@media (min-width: 768px) {
+    footer .home-footer2 .col-u-3{
+        text-align: right;
+    }
+}
+footer .home-footer2 .col-u-2 li{
+    width: 140px;
+}
+footer .home-footer2 .copyright{
+    text-align: center;
+    border-top: 1px solid #2EB77F;
+    margin-left: -15px;
+    padding: 0 15px;
+}
