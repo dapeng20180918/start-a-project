@@ -30,6 +30,7 @@ header .home-header1 .right img:hover {
 
 header .home-header2 {
     background-color: #29B078;
+    text-align: center;
 }
 
 header .home-header2 > .navbar {
@@ -42,15 +43,15 @@ header .home-header2 li a {
     border-bottom: 3px solid #29B078;
 }
 
-@media (min-width: 300px) {
-    header .home-header2 .u-nav {
-        padding-left: 30px;
-    }
+/*@media (min-width: 300px) {*/
+    /*header .home-header2 .u-nav {*/
+        /*padding-left: 30px;*/
+    /*}*/
 
-    header .home-header2 .u-nav > li {
-        float: left;
-    }
-}
+    /*header .home-header2 .u-nav > li {*/
+        /*float: left;*/
+    /*}*/
+/*}*/
 
 header .home-header2 li a:hover,
 header .home-header2 li a:focus {
@@ -102,7 +103,9 @@ header .home-header2 .logo {
 .home-body .info .u-fix-3 {
     margin-top: 5px;
 }
-
+.home-body .info .u-desc {
+    height: 195px;
+}
 .home-body .info .u-box {
     position: relative;
     text-align: left;
@@ -165,11 +168,17 @@ header .home-header2 .logo {
     margin-bottom: 30px;
     height: 85px;
 }
-
+.home-body .study .arrow {
+    background: url("../images/1/pic5.png") no-repeat 100% 31px;
+    background-size: 22px auto;
+}
+.home-body .study .arrow2 {
+    background: url("../images/1/pic5.png") no-repeat 100% 31px;
+    background-size: 22px auto;
+}
 @media (min-width: 768px) {
-    .home-body .study .arrow {
-        background: url("../images/1/pic5.png") no-repeat 100% 31px;
-        background-size: 22px auto;
+    .home-body .study .arrow2 {
+        background: none;
     }
 }
 
@@ -182,19 +191,20 @@ header .home-header2 .logo {
     font-size: 1.2em;
     display: inline-block;
     text-align: center;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     background-color: #FFFFFF;
     border: 1px solid #EDECEC;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    padding-top: 12px;
+    padding-top: 9px;
     /*float: left;*/
 }
 
 .home-body .study .u-line .content {
     width: calc(100% - 78px);
+    /*text-align: left;*/
     text-align: left;
     font-size: .8em;
     padding-left: 10px;
@@ -202,10 +212,22 @@ header .home-header2 .logo {
     color: #999999;
 }
 
+@media (max-width: 400px) {
+    .home-body .student .u-student{
+        width: 100%;
+    }
+}
+.home-body .student>.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.home-body .student .u-student{
+    padding: 0 6px;
+}
 .home-body .student .u-line {
     border: 1px solid #EEEDED;
     background-color: white;
-    margin: 0 10px 10px 10px;
+    margin: 0 0px 15px 0px;
 }
 
 .home-body .student .u-line .line1 img {
