@@ -60,9 +60,12 @@ div.desc{
     bottom: -13px;
 }
 .u-mid{
-    overflow-y: auto;
+
     /*max-height: calc(100% - 150px);*/
     background-color: #29bde0;
+}
+.u-mid .u-parent{
+    overflow-y: auto;
 }
 .u-textleft{
     padding: 20px;
@@ -83,7 +86,7 @@ div.desc{
     /*height: calc(100% - 32px);*/
     /*padding-top: 16px;*/
     width: 100%;
-    background-color: #F5C97B;
+    /*background-color: #F5C97B;*/
     position: absolute;
     top: calc(50% - 16px);
     transform: translate(0,-30%);
@@ -99,17 +102,20 @@ div.desc{
     bottom: 0;
 }
 .u-mid .row .u-cont-btn{
-    height: 35px;
-    margin: 0 -10px;
+    /*height: 35px;*/
+    /*margin: 0 -10px;*/
+    width: 100%;
     /*visibility: hidden;*/
 }
 .u-mid .row .u-cont-btn>button{
-    margin-top: 8px;
+    margin: 8px 0;
     border: none;
-    width: 20px;
-    height: 20px;
+    width: calc(25% - 6px);
     padding: 0;
-    background-size: 20px 20px;
+    padding-top: calc(25% - 6px);
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .u-mid .row .u-cont-btn>.game4{
     background-image: url("../images/game4.png");
@@ -151,7 +157,7 @@ header .row .over1{
     margin-left: -10px;
 }
 .result-line-1{
-    height: 350px;
+    height: 355px;
     background-color: #29bde0;
     border-top: 1px solid #68D0E9;
     position: relative;

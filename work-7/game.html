@@ -32,6 +32,7 @@
     <img src="images/cut.png" alt="" class="cut-img">
 </div>
 <div class="u-mid">
+
     <div class="container">
         <div class="u-textleft">
             <span>点击得票数最多人的头像</span>
@@ -190,7 +191,7 @@
             (child).appendTo($("#u-parent"));
         }
         // add no use node
-        for (var i = 0; i < 6; i++) {
+        for (var i = 0; i < 3; i++) {
             var child = $("#no-use").clone(true);
             child.css("display", "block");
             (child).appendTo($("#u-parent"));
@@ -213,9 +214,9 @@
 
     function resizeDiv() {
         console.info($(window).height());
-        var my_top = ($(window).height() - 190) + 'px';
+        var my_top = ($(window).height() - 190 - 50) + 'px';
         console.info(my_top);
-        $(".u-mid").css({"height": my_top});
+        $(".u-parent").css({"height": my_top});
     }
 
     $(".u-mid .row .u-col-xs-4").hover(function () {

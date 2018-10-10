@@ -58,6 +58,7 @@
         <p>水民词汇：努尔哈赤</p>
     </div>
 </div>
+
 <div class="result-line-2" id="u-parent">
     <div class="result-line-2-box" id="u-child">
         <div class="container">
@@ -71,9 +72,8 @@
             </div>
         </div>
     </div>
-
-
 </div>
+
 <footer class="result">
     <div class="col-xs-6">
         <a href="index.html">
@@ -93,6 +93,10 @@
             child.find("div.col-xs-7").text("第" + (i + 2) + "天");
             (child).appendTo($("#u-parent"));
         }
+        //a white line
+        var child = $("#u-child").clone(true);
+        (child).appendTo($("#u-parent"));
+        child.css("visibility", "hidden");
         resizeDiv();
     });
     $(window).resize(function () {
