@@ -98,6 +98,7 @@ div.u-header {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
 }
-.u-header li.active{
+.u-header li.active,
+.u-header li:hover{
     background-color: #29bde0;
 }
